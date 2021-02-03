@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./images/game_main_icon.png">
+    <title>tetris</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="inner_modal">
+        <h2 class="modal_header">Приветсвую Вас<span class="player_name"></span>!</h2>
+          <p class="enter_name" contenteditable="true">[Введите свое имя]</p>
+          <button class="play_game">Играть!</button>
+        </div>
+    </div>
+    <div class="game_zone">
+      <div class="screen_field">
+        <h2 class="game_name">TETRIS v2.0</h2>
+        <div class="icons_column">
+          <div class="tetris_icon tetris_icon-1"></div>
+          <div class="tetris_icon tetris_icon-2"></div>
+          <div class="tetris_icon tetris_icon-4"></div>
+          <div class="tetris_icon tetris_icon-3"></div>
+        </div>
+        <div class="game_screen">
+          <div class="game_screen-main"></div>
+          <div class="game_screen-aside hide">
+            <h3 class="game_screen_aside-score current_player_name"></h3>
+            <p class="game_screen_aside-score">Your result:<br><span class="your_result">0</span></p>
+            <p class="game_screen_aside-score">Your level:<br><span class="your_level">0</span></p>
+            <p class="game_screen_aside-hi-score">Best score:<br><span class="best_score_name"></span><br><span class="best_score"></span></p>
+            <p class="game_screen_aside-hi-score"><span class="paused"></span></p>
+            <div class="game_screen_aside-music-icon sound_on"></div>
+          </div>
+        </div>
+        <div class="icons_column">
+          <div class="tetris_icon tetris_icon-3"></div>
+          <div class="tetris_icon tetris_icon-4"></div>
+          <div class="tetris_icon tetris_icon-2"></div>
+          <div class="tetris_icon tetris_icon-1"></div>
+        </div>
+      </div>
+
+      <div class="delimiter"></div>
+      <div class="game_buttons">
+        <div class="top_game_buttons">
+          <button class="on_off button"></button>
+          <button class="start button"></button>
+          <button class="sound button"></button>
+          <button class="zoom button"></button>
+        </div>
+        <div class="cross_game_buttons">
+          <button class="top button"></button>
+          <button class="left button"></button>
+          <button class="right button"></button>
+          <button class="bottom button"></button>
+        </div>
+          <button class="rotate button"></button>
+      </div>
+      <div class="inscription_block">
+        <p class="inscription_block-text-1">BRICK</p>
+        <p class="inscription_block-text-2">GAME</p>
+        <img src="./images/game_main_icon.png" alt="иконка brick game" class="main_bame_icon">
+      </div>
+    </div>
+    <div class="full_screen_size_button hide"></div>
+  <footer class="footer slide">
+      <div class="author">
+          <p class="author_info">Liakhovchuk Andrii -
+              <a href="https://github.com/mabay919" class="my_link">GitHub</a>
+          </p>
+      </div>
+      <div class="courses">
+          <a href="https://rs.school/js/" class="cources_link">The Rolling Scopes<br>
+              <img src="https://rs.school/images/rs_school_js.svg" alt="cources image" class="cources_image">
+              <br>2021
+          </a>
+      </div>
+  </footer>
+    <audio data-key="all_butt" src="./audio/tetris_piu.mp3"></audio>
+    <audio data-key="hello" src="./audio/tetris_hello.mp3"></audio>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
