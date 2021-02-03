@@ -566,6 +566,67 @@ body {
   display: none;
 }
 
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  /*background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  */
+  font-size: 1.2em;
+  color: rgb(110, 61, 0);
+  padding: 5px 30px 5px;
+  margin-top: 35px;
+  /*border-top: 2px solid rgb(39, 39, 39);
+  */
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.footer a {
+  text-decoration: underline;
+  color: rgb(110, 61, 0);
+}
+.footer a:hover {
+  color: #1366ff;
+  text-decoration: underline;
+}
+.author {
+  font-size: 0.8em;
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+.author_info {
+  margin: 5px 10px;
+  height: 35px;
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid rgb(255, 140, 0);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.courses {
+  align-self: center;
+  text-align: center;
+}
+.cources_image {
+  width: 70px;
+}
+.slide {
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .inner_modal {
     font-size: 3vw;
@@ -579,6 +640,16 @@ body {
     width: 15px;
     height: 15px;
     right: 0.1vw;
+  }
+}
+@media screen and (max-width: 875px) {
+  .footer {
+    display: none;
+  }
+}
+@media screen and (max-height: 680px) {
+  .footer {
+    display: none;
   }
 }
 @media screen and (max-height: 670px) {
